@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2vw;
+  max-width: 90%;
+  margin: 1vmax auto;
+  height: 8vh;
+}
+
+.logo img {
+  max-width: 6vmax; 
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2vw;
+}
+
+nav ul li {
+  font-size: 1vmax;
+}
+
+button {
+  all: unset;
+  padding: 0.5vmax 1vmax;
+  color: white;
+  font-weight: 500;
+  background: #d01c28;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.shoe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.shoe-content {
+  max-width: 80%;
+  margin: auto;
+}
+
+.shoe h1 {
+  font-weight: 800;
+  color: #2e2b2b;
+  font-size: 2.5rem;
+}
+
+.nike {
+  height: 30vmax;
+  width: 100%;
+  max-width: 35vw;
+  margin: 1vw auto;
+  
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn1, .btn2 {
+  font-size: .7rem;
+}
+
+.btn2 {
+  background: transparent;
+  color: #312727;
+  border: 1px solid #372e2e;
+}
+
+.icon p {
+  font-size: 1.2vmax;
+}
+
+
+
+.available {
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+  font-size: .5vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.available p{
+  margin: 0%;
+}
+.logos {
+  margin-top: 1vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logos img {
+  max-width: 1.2vmax; 
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo img {
+    height: 5vmax;
+  }
+  .logos img{
+    height: 3vmax;
+  }
+
+  nav ul {
+  
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .shoe h1 {
+    font-size: 1.8rem;
+    margin-top: 3vmax;
+  }
+
+  .nike {
+    height: 30vmin;
+    width: 100%;
+  }
+
+  .buttons {
+    gap: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin-top: 4vmax;
+  }
+
+  .container p {
+    max-width: 90%;
+    
+  }
+
+  .logos img {
+    max-width: 3vmax;
+  }
+
+  .available {
+    font-size: 1.5vmax;
+  }
+}
+
+@media (max-width: 480px) {
+  .shoe h1 {
+    font-size: 1.5vmax;
+  }
+
+  .nike {
+    height: 40vmin;
+    width: 100%;
+    margin: 10vh 0 5vh 0;
+  }
+
+  .buttons {
+    gap: 0.8vmax;
+    display: flex;
+    align-items: center;
+    margin-top: 5vmax;
+    margin-bottom: 10vmax;
+  }
+  nav ul li{
+    font-size: 1.5vmax;
+  }
+  p{
+    font-size: 2vmax;
+  }
+  
+  .btn1, .btn2 {
+    font-size: 1.5vmax;
+  }
+
+ .amazon img,.flipkart img{
+  height: 1vmax
+ }
+
+
+  .available {
+    font-size: 1.2vmax;
+  }
+ 
+}
